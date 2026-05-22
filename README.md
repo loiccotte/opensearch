@@ -17,10 +17,12 @@
 ## I. Mise en place d'OpenSearch
 ### 1. Téléchargement de l’outil
 
-1. Télécharcher le répértoire [opensearch3.0.0-windows-x64.zip](opensearch-3.0.0-windows-x64.zipop) sur la machine de l'IUT.
+1. Télécharcher le répértoire [opensearch3.0.0-windows-x64.zip](https://bul.univ-lyon2.fr/index.php/s/xKcKJpuPGWr3XWY) ou depuis le répertoire Deep BigData du réseau de l'IUT (**recommandé**) :
+   👉 (votre dossier de promo) -> Deep BigData 
 
 2. Copier le réptoire zip dans votre répertoire Documents 
    **`opensearch3.0.0-windows-x64.zip`**
+
 
 ---
 
