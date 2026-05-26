@@ -57,9 +57,38 @@ Il existe deux façons d'exécuter le script batch pour démarrer OpenSearch (Si
 1. Ouvrez **l'Invite de commande** (tapez `cmd`) ou **PowerShell** (tapez `powershell`) dans la barre de recherche Windows.  
 2. Accédez au répertoire d'installation d'OpenSearch :  
    ```cmd
-   cd \chemin\vers\opensearch-1.3.20
+   cd \chemin\vers\opensearch-3.0
    ```
 3. Exécutez le script batch :  
+   ```cmd
+   .\opensearch-windows-install.bat
+   ```
+
+====
+
+Dans le cas ou vous rencontrez des erreurs, voici ce qu'il faut faire 
+
+====
+
+1. Supprimer tout les espaces dans les noms de répertoire.
+1. Dans le fichier ``opensearch.yml`` qui est dans le repertoire ``\opensearch-3.0.0\config``, rajouter ce code : 
+
+```yaml
+plugins.security.disabled: true
+plugins.security.ssl.http.enabled: false
+plugins.security.ssl.transport.enabled: false
+```
+3. Executer ces commandes dans le powershell : 
+```bash
+$env:JAVA_HOME = "C:\Users\<nom-de-votre-session>\Documents\OpenSearch3.0-winddows-x64\OpenSearch-3.0\opensearch-3.0.0\jdk"
+```
+4. Ensuite : 
+```bash
+$env:PATH = "$env:JAVA_HOME\bin;$env:PATH"
+```
+
+5. Exécutez le script batch depuis le dossier ``opensearch-3.0.0\bin``:  
+
    ```cmd
    .\opensearch-windows-install.bat
    ```
