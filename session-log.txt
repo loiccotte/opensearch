@@ -1,0 +1,62 @@
+﻿**********************
+Début de la transcription Windows PowerShell
+Heure de début : 20260527084638
+Nom d'utilisateur : IUT-LUMIERE\lcotte
+Utilisateur runAs :  IUT-LUMIERE\lcotte
+Nom de la configuration : 
+Ordinateur : SI-8NFZQ34 (Microsoft Windows NT 10.0.26200.0)
+Application hôte : C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+ID de processus : 11244
+PSVersion: 5.1.26100.7920
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7920
+BuildVersion: 10.0.26100.7920
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcription démarrée, le fichier de sortie est C:\Users\TEMP.IUT-LUMIERE.001\Documents\Github\opensearch\session-log.txt
+PS C:\Windows> curl.exe -X GET http://localhost:9200 -u "admin:admin" --insecure
+{
+  "name" : "SI-8NFZQ34",
+  "cluster_name" : "opensearch",
+  "cluster_uuid" : "wtHgAyXvQQKmBozR9MY07A",
+  "version" : {
+    "distribution" : "opensearch",
+    "number" : "3.0.0",
+    "build_type" : "zip",
+    "build_hash" : "dc4efa821904cc2d7ea7ef61c0f577d3fc0d8be9",
+    "build_date" : "2025-05-03T06:23:27.466341700Z",
+    "build_snapshot" : false,
+    "lucene_version" : "10.1.0",
+    "minimum_wire_compatibility_version" : "2.19.0",
+    "minimum_index_compatibility_version" : "2.0.0"
+  },
+  "tagline" : "The OpenSearch Project: https://opensearch.org/"
+}
+PS C:\Windows> curl.exe -X GET http://localhost:9200/_cat/plugins?v -u "admin:admin" --insecure
+name       component                            version
+SI-8NFZQ34 opensearch-alerting                  3.0.0.0
+SI-8NFZQ34 opensearch-anomaly-detection         3.0.0.0
+SI-8NFZQ34 opensearch-asynchronous-search       3.0.0.0
+SI-8NFZQ34 opensearch-cross-cluster-replication 3.0.0.0
+SI-8NFZQ34 opensearch-custom-codecs             3.0.0.0
+SI-8NFZQ34 opensearch-flow-framework            3.0.0.0
+SI-8NFZQ34 opensearch-geospatial                3.0.0.0
+SI-8NFZQ34 opensearch-index-management          3.0.0.0
+SI-8NFZQ34 opensearch-job-scheduler             3.0.0.0
+SI-8NFZQ34 opensearch-knn                       3.0.0.0
+SI-8NFZQ34 opensearch-ltr                       3.0.0.0
+SI-8NFZQ34 opensearch-ml                        3.0.0.0
+SI-8NFZQ34 opensearch-neural-search             3.0.0.0
+SI-8NFZQ34 opensearch-notifications             3.0.0.0
+SI-8NFZQ34 opensearch-notifications-core        3.0.0.0
+SI-8NFZQ34 opensearch-observability             3.0.0.0
+SI-8NFZQ34 opensearch-reports-scheduler         3.0.0.0
+SI-8NFZQ34 opensearch-security                  3.0.0.0
+SI-8NFZQ34 opensearch-security-analytics        3.0.0.0
+SI-8NFZQ34 opensearch-skills                    3.0.0.0
+SI-8NFZQ34 opensearch-sql                       3.0.0.0
+SI-8NFZQ34 opensearch-system-templates          3.0.0.0
+SI-8NFZQ34 query-insights                       3.0.0.0
